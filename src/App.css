@@ -242,3 +242,128 @@ to { opacity:1; }
 .icon-github    { top: 55%; left: 37%; width: 5%; height: 9%; }
 .icon-linkedin  { top: 55%; left: 44%; width: 5%; height: 9%; }
 .icon-instagram { top: 54%; left: 51%; width: 5%; height: 10%; }
+
+
+
+
+
+
+
+
+
+
+.timeline-strip {
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  text-align: right;
+}
+
+.strip-logo {
+  width: 6%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.strip-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 80%;
+}
+
+.strip-text h3 {
+  font-size: clamp(0.85rem, 1.6vw, 1.15rem);
+  margin: 0;
+  color: #000000;
+}
+
+.strip-years {
+  font-size: clamp(0.7rem, 1.1vw, 0.9rem);
+  opacity: 0.75;
+  color: #000000;
+}
+
+.strip-text p {
+  font-size: clamp(0.7rem, 1.1vw, 0.9rem);
+  margin: 4px 0 0;
+  line-height: 1.4;
+  color: #000000;
+}
+
+/* nudge these top % values to land inside each of your 3 empty strips */
+.strip-1 { top: 12%; }
+.strip-2 { top: 42%; }
+.strip-3 { top: 72%; }
+
+
+
+
+
+
+
+
+
+
+
+.edu-logo {
+  width: 11%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.edu-text {
+  flex: 1;
+  text-align: right;
+  overflow: hidden;
+}
+
+.edu-text h3 {
+  font-family: "Permanent Marker", cursive;
+  font-size: clamp(0.65rem, 1.15vw, 0.9rem); /* was 0.75rem, 1.4vw, 1.05rem */
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin: 0;
+  color: #3a2418;
+  line-height: 1.15; /* was 1.25 */
+}
+
+.strip-years {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: clamp(0.55rem, 0.85vw, 0.72rem); /* was 0.6rem, 0.95vw, 0.8rem */
+  opacity: 0.75;
+  color: #3a2418;
+}
+
+.edu-text p {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: clamp(0.55rem, 0.85vw, 0.72rem); /* was 0.6rem, 0.95vw, 0.8rem */
+  margin: 2px 0 0; /* was 3px */
+  line-height: 1.25; /* was 1.35 */
+  color: #3a2418;
+}
+
+.edu-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  box-sizing: border-box;
+  padding: 1% 4%;
+}
+
+.box-1 { top: 4%; left: 43%; width: 44%; height: 27%; } /* height 22% → 27% */
+.box-2 { top: 36%; left: 1%; width: 45%; height: 26%; } /* height 21% → 26% */
+.box-3 { top: 68%; left: 43%; width: 44%; height: 27%; } /* height 22% → 27% */
